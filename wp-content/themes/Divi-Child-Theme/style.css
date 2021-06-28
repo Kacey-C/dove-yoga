@@ -37,4 +37,46 @@ h2 {
 
 p {
     font-size: 1em;
+    font-weight: 300;
+}
+
+.sub-text {
+    font-size: 1em;
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.title {
+    padding-top: 1em;
+}
+
+.sub-text a {
+    color: #8B6C86;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 980px) {
+    h1 {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.25em;
+    }
+    .title {
+        padding-top: 2em;
+    }
+    
+}
+
+.row-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
