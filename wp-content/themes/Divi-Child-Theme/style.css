@@ -112,3 +112,27 @@ address {
     }
 }
 /* END Header Styles */
+
+/* Classes */
+
+.classes-link > a {
+    color: #8B6C86;
+    text-decoration: underline;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+}
+
+.class-description {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 980px) {
+    .class-description {
+        flex-wrap: nowrap;
+    }
+}
+
+/* END Classes */
