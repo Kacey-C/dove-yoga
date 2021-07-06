@@ -35,6 +35,9 @@ h1{
 h2 {
     font-size: 1.25em;
 }
+h3 {
+    font-size: 1em;
+}
 
 p,
 address {
@@ -99,6 +102,9 @@ address {
     h2 {
         font-size: 2em;
     }
+    h3 {
+        font-size: 1.75em;
+    }
     p,
     address {
         font-size: 1.25em;
@@ -136,3 +142,17 @@ address {
 }
 
 /* END Classes */
+
+/* Instructors */
+
+#instructors h3 {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 980px) {
+    #instructors h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* END Instructors */
