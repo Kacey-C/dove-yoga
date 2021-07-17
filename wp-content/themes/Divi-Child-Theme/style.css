@@ -86,6 +86,12 @@ address {
     flex-wrap: wrap;
 }
 
+.row-container-nowrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
 .footer-button,
 .footer-title {
     font-family: 'Calligraffitti', cursive, 'Raleway', 'Open Sans', sans-serif;
@@ -96,6 +102,21 @@ address {
     text-align: center;
     font-size: 0.875em;
 }
+
+   /*skinny email signup*/
+   @media (min-width: 980px){
+    #skinny.et_pb_newsletter .et_pb_newsletter_fields {
+      flex-wrap: nowrap !important;
+    }
+    #skinny.et_pb_newsletter .et_pb_newsletter_fields>* {
+      flex-basis: 23%;
+    }
+     
+    #skinny .et_pb_newsletter_form {
+      padding-left: 0px;
+    } 
+    }
+ /*end skinny email signup */
 
 @media screen and (min-width: 980px) {
     h1 {
@@ -120,6 +141,26 @@ address {
     }
 }
 /* END Header Styles */
+
+/* Home */
+
+.bible-quote,
+.bible-quote em {
+    font-size: 1.2em;
+    line-height: 1.5;
+    width: 80%;
+}
+
+.bible-quote span {
+    font-weight: 700;
+    color: #8b6c86;
+}
+
+.right-align {
+    text-align: right;
+}
+
+/* END Home */
 
 /* Classes */
 
