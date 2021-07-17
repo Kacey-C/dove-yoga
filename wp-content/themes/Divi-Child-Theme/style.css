@@ -71,12 +71,22 @@ address {
     font-weight: 400;
 }
 
+.button-text {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
 /* Nav + Footer */
 
-.nav-container {
+.nav-container,
+.nav-container a:not(.button-text) {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #3f3f3f;
 }
 
 .row-container,
@@ -102,6 +112,29 @@ address {
     text-align: center;
     font-size: 0.875em;
 }
+
+/* nav shrink sticky scroll 
+
+.reduce-section-padding {
+    transition: all 0.9s ease-out 0s;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    }
+     
+    .increase-row-width {
+    transition: all 0.9s ease-out 0s;
+    width: 100% !important;
+    }
+     
+    .slow-transition {
+    transition: all 0.9s ease-out 0s;
+    }
+     
+    #main-content {
+    margin-top: 5vw;
+    }
+
+ end nav shrink sticky scroll */
 
    /*skinny email signup*/
    @media (min-width: 980px){
