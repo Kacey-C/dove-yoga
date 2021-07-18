@@ -30,20 +30,20 @@ h6 {
 }
 
 h1{
-    font-size: 2em;
+    font-size: 2em!important;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.75em!important;
 }
 h3 {
-    font-size: 1.5em;
+    font-size: 1.5em!important;
 }
 
 p,
 address {
     font-family: 'Raleway', 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1em!important;
     font-weight: 400;
     color: #3f3f3f;
 }
@@ -53,8 +53,14 @@ address {
 }
 
 .sub-text {
-    font-size: 1em;
+    font-size: 1.2em!important;
     text-align: center;
+}
+
+.sub-text a {
+    color: #8B6C86;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .center-text {
@@ -65,15 +71,15 @@ address {
     padding-top: 1em;
 }
 
-.sub-text a {
-    color: #8B6C86;
-    text-decoration: underline;
-    font-weight: 400;
-}
-
 .button-text {
     font-family: 'Raleway', 'Open Sans', sans-serif;
     font-size: 1em;
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Nav + Footer */
@@ -107,34 +113,15 @@ address {
     font-family: 'Calligraffitti', cursive, 'Raleway', 'Open Sans', sans-serif;
 }
 
+.footer-title {
+    font-size: 1.3em;
+}
+
 .footer-container p,
 .footer-container address {
     text-align: center;
-    font-size: 0.875em;
+    font-size: 1em;
 }
-
-/* nav shrink sticky scroll 
-
-.reduce-section-padding {
-    transition: all 0.9s ease-out 0s;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    }
-     
-    .increase-row-width {
-    transition: all 0.9s ease-out 0s;
-    width: 100% !important;
-    }
-     
-    .slow-transition {
-    transition: all 0.9s ease-out 0s;
-    }
-     
-    #main-content {
-    margin-top: 5vw;
-    }
-
- end nav shrink sticky scroll */
 
    /*skinny email signup*/
    @media (min-width: 980px){
@@ -153,24 +140,25 @@ address {
 
 @media screen and (min-width: 980px) {
     h1 {
-        font-size: 4em;
+        font-size: 4.25em!important;
     }
     h2 {
-        font-size: 2em;
+        font-size: 2.25em!important;
     }
     h3 {
-        font-size: 1.75em;
+        font-size: 2em!important;
     }
-    p,
+    p:not(.right-align),
     address {
-        font-size: 1.25em;
+        font-size: 1.6em!important;
+        line-height: 1.5em!important;
     }
     .title {
-        padding-top: 2em;
+        padding-top: 2em!important;
     }
-    .footer-container p,
+    .footer-container p:not(.footer-title),
     .footer-container address {
-    font-size: 1em;
+    font-size: 1.3em!important;
     }
 }
 /* END Header Styles */
@@ -180,7 +168,7 @@ address {
 .bible-quote,
 .bible-quote em {
     font-size: 1.2em;
-    line-height: 1.5;
+    line-height: 1.5em;
     width: 80%;
 }
 
@@ -191,6 +179,7 @@ address {
 
 .right-align {
     text-align: right;
+    font-size: 1.2em;
 }
 
 /* END Home */
