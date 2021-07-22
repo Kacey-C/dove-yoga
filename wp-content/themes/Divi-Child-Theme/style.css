@@ -48,6 +48,10 @@ address {
     color: #3f3f3f;
 }
 
+a {
+    color: #3f3f3f;
+}
+
 address {
     font-style: normal;
 }
@@ -82,17 +86,48 @@ address {
     flex-wrap: wrap;
 }
 
+/* Default button appearance */
+.et_pb_scroll_top.et-pb-icon {
+    right: 30px; /* space from right */
+    bottom: 30px; /* space from bottom */
+    padding: 8px; /*padding size*/
+    border-radius: 30px; /* make the circle */
+    background: #ba91b1 /* button color */;	
+    font-size: 32px; /* icon size */
+    transition: all .1s ease-in-out; /* add transition */
+}
+/* Button Appearance on Mouseover */
+.et_pb_scroll_top.et-pb-icon:hover {
+    bottom: 32px /* space from bottom */;
+    background: #8b6c86 /*button hover color*/;	
+    transition: all .1s ease-in-out; /*add transition*/
+    box-shadow: 0 10px 15px #2b222a50; /*box shadow on hover*/
+}
+/* Animation tweaks */
+.et_pb_scroll_top.et-visible {
+    -webkit-animation: fadeInBottom 1s 1 cubic-bezier(.50,0,.160,1);
+    -moz-animation: fadeInBottom 2s 1 cubic-bezier(.50,0,.160,1);
+    -o-animation: fadeInBottom 1s 1 cubic-bezier(.50,0,.160,1);
+    animation: fadeInBottom 1s 1 cubic-bezier(.50,0,.160,1);
+}
+.et_pb_scroll_top.et-hidden {
+    opacity: 0;
+    -webkit-animation: fadeOutBottom 1s 1 cubic-bezier(.77,0,.175,1);
+    -moz-animation: fadeOutBottom 1s 1 cubic-bezier(.77,0,.175,1);
+    -o-animation: fadeOutBottom 1s 1 cubic-bezier(.77,0,.175,1);
+    animation: fadeOutBottom 1s 1 cubic-bezier(.77,0,.175,1);
+}
+
 /* Nav + Footer */
 
 .nav-container,
-.nav-container a:not(.button-text) {
+.nav-container a {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     font-family: 'Raleway', 'Open Sans', sans-serif;
     font-size: 1.25em;
     font-weight: 400;
-    color: #3f3f3f;
 }
 
 .row-container,
@@ -106,6 +141,11 @@ address {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+}
+
+.row-nowrap-tablet {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-button,
@@ -123,6 +163,12 @@ address {
     font-size: 1em;
 }
 
+.footer-phone {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
    /*skinny email signup*/
    @media (min-width: 980px){
     #skinny.et_pb_newsletter .et_pb_newsletter_fields {
@@ -137,6 +183,12 @@ address {
     } 
     }
  /*end skinny email signup */
+ @media screen and (min-width: 640px) {
+    .row-nowrap-tablet {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+ }
 
 @media screen and (min-width: 980px) {
     h1 {
@@ -150,7 +202,7 @@ address {
     }
     p:not(.right-align),
     address {
-        font-size: 1.6em!important;
+        font-size: 1.4em!important;
         line-height: 1.5em!important;
     }
     .title {
@@ -229,6 +281,12 @@ address {
 
 #instructors h3 {
     font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+#instructors a {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #8B6C86;
 }
 
 @media screen and (min-width: 980px) {
