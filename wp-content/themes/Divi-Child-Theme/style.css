@@ -130,12 +130,6 @@ address {
   font-weight: 400;
 }
 
-.nav-sub-container {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
 .row-container,
 .footer-container {
   display: flex;
